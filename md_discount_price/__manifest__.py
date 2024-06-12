@@ -14,8 +14,6 @@
     "data": [
         "views/account_move_inherit.xml"
     ],
-    "price": 5,
-    "currency": "EUR",
     "installable": True,
     "auto_install": False,
     "application": True,
