@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from odoo import models, fields, api, _
 from odoo.tools.translate import _
 from odoo.exceptions import ValidationError
@@ -11,6 +12,9 @@ class AccountMoveLine(models.Model):
 
     @api.onchange('discount_price')
     def _onchange_discount_price(self):
+        """
+            Approach to computing the percentage of discount based on the discounted price
+        """
         for rec in self:
             if rec.discount_price <= (rec.quantity * rec.price_unit):
                 if rec.discount_price == 0.00:
