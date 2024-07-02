@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 {
     "name": "Discount On Price",
     "version": "16.0.0",
@@ -6,7 +7,7 @@
     "discription": """
         The Discount Calculator Application is designed to effortlessly compute discount percentages based on changes in price, as well as determine the discounted price from a given discount percentage.
     """,
-    "author": "Dave Group",
+    "author": "Odoo Class",
     "website": "",
     "license": "LGPL-3",
     "category": "Invoicing",
