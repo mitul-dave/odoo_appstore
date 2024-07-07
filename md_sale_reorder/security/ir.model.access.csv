@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+md_sale_reorder.access_wizard_sale_reorder,access_wizard_sale_reorder,md_sale_reorder.model_wizard_sale_reorder,,1,1,1,1

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="wizard_sale_reorder_form_view" model="ir.ui.view">
+        <field name="name">wizard.sale.reorder.form.view</field>
+        <field name="model">wizard.sale.reorder</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="customer_id" readonly="1"/>
+                        <field name="order_id" domain="[('partner_id', '=', customer_id), ('id', '!=', context.get('order_id'))]"/>
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="action_reorder" string="Reorder" type="object" class="btn-primary"/>
+                    <button string="Cancel" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="wizard_sale_reorder_action_view" model="ir.actions.act_window">
+        <field name="name">Sale Reorder</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">wizard.sale.reorder</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="wizard_sale_reorder_form_view"/>
+        <field name="target">new</field>
+    </record>
+</odoo>
