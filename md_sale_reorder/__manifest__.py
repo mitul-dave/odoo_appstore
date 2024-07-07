@@ -17,7 +17,7 @@
         "views/sale_order_inherit.xml",
         "wizard/sale_reorder_view.xml"
     ],
-    'images': ['static/description/img/banner.png'],
+    "banner": ['static/description/img/banner.png'],
     "installable": True,
     "auto_install": False,
     "application": True,
