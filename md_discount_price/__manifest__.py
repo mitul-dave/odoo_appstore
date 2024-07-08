@@ -15,6 +15,7 @@
     "data": [
         "views/account_move_inherit.xml"
     ],
+    "images": ['static/description/banner.png'],
     "installable": True,
     "auto_install": False,
     "application": True,
